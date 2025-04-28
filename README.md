@@ -14,3 +14,8 @@ node index.js
 ```text
 'Hello World!'
 ```
+
+5. Add the following code, in order to get access with File System to write and read files:
+```js
+const fs = require('fs');
+```
