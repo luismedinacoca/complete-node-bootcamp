@@ -1,29 +1,64 @@
-# Lecture 011: Creating a Simple Web Server
+# Lecture 012: Routing
 
-1. Delete everything and coome back for server: 
-
-2. Add in top code space:
+1. In top:
 ```js
 const http = require('http')
+const url = require('url')
 ```
-3. Create a server:
+
+2. How url works:
 ```js
 const server = http.createServer( (req, res) => {
+    console.log(req.url);
     res.end('Hello from the server!');
 })
 ```
+> You can add some route in the local host page. You will see the url from the terminal.
 
-4. Call the server with the listen method, add its port number:
-```js
-server.listen(8000, '127.0.0.1', () => {
-    console.log('Listening to requests on port 8000');
-})
-```
-
-5. Print from console the request from step 3:
+3. How some pages work:
 ```js
 const server = http.createServer( (req, res) => {
-    console.log(req);
-    res.end('Hello from the server!');
+    const pathName = req.url;
+    if(pathName === '/' || pathName === '/overview'){
+        res.end("This is the OVERVIEW page");
+    } else if(pathName === '/product'){
+        res.end("This is the PRODUCT page");
+    } else {
+        res.end('Page not Found!');
+    }
 })
 ```
+
+4. Add `res.writeHead(404)` in else section:
+```js
+const server = http.createServer( (req, res) => {
+    //console.log(req.url);
+    const pathName = req.url;
+
+    if(pathName === '/' || pathName === '/overview'){
+        res.end("This is the OVERVIEW page");
+    } else if(pathName === '/product'){
+        res.end("This is the PRODUCT page");
+    } else {
+        res.writeHead(404);
+        res.end('Page not Found!');
+    }
+})
+```
+with `res.writeHead(404)` you will be able to see this image from terminal:
+<img src="./PageNotFound-Error404.png">
+from network tab in devtools:
+<img src="fromNetwork-Error404.png">
+
+5. Send more info as heades with `res.writeHead(404, {...})`:
+```js
+    else {
+        //send headers
+        res.writeHead(404, {
+            "Content-type":"text/html",
+            'my-own-header': 'hello world',
+        });
+        res.end('<h1>Page not Found!</h1>');
+    }
+```
+<img src="./error404-headers.png">
