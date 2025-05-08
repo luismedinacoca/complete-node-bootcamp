@@ -2,6 +2,8 @@ const fs = require('fs');
 const http = require('http')
 const url = require('url')
 
+const replaceTemplate = require('./modules/replaceTemplate')
+
 /********************************** FILES **********************************/
 /*
 const textIn = fs.readFileSync('./txt/input.txt', 'utf-8');
@@ -35,6 +37,7 @@ console.log("Will read file!");
 
 /********************************** SERVER **********************************/
 
+/*
 const replaceTemplate = (temp, product) => {
     let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
     output = output.replace(/{%IMAGE%}/g, product.image);
@@ -49,6 +52,7 @@ const replaceTemplate = (temp, product) => {
 
     return output;
 }
+*/
 
 const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8');
 const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8');
