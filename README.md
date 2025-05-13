@@ -59,3 +59,35 @@ now open the terminal and run:
 ```bash
 npm run start
 ```
+
+# Lecture 020:
+
+## Add `Slugify` to the project:
+```js
+const slugify = require('slugify');
+```
+Review at: [slugify - npm](https://www.npmjs.com/package/slugify)
+
+Using dataObj then apply slugify:
+```js
+const slugify = require('slugify');
+
+// create slugs array:
+const slugs = dataObj.map(el => slugify(el.productName, {lower: true}));
+console.log(slugs);
+```
+
+having an array as:
+```js
+[
+  'fresh-avocados',
+  'goat-and-sheep-cheese',
+  'apollo-broccoli',
+  'baby-carrots',
+  'sweet-corncobs'
+]
+```
+
+# Lecture 022:
+
+

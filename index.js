@@ -44,7 +44,7 @@ const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
 //console.log("dataObj: ", dataObj);
 
-console.log(slugify('Fresh Avocados', {lowercase: true}));
+console.log(slugify('Hola Mundo Fresh Avocados', {lower: true}));
 
 // create slugs array:
 const slugs = dataObj.map(el => slugify(el.productName, {lower: true}));
