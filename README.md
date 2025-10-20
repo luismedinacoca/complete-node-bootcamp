@@ -1569,3 +1569,8 @@ npm outdated
 
 # 📚 Lecture 030: Node, V8, Libuv and C++
 <img src="./img/section04-lecture030-001.png">
+
+
+# Lecture 031: Processes, Threads and the Thread Pool
+<img src="./img/section04-lecture031-001.png">
+
