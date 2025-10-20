@@ -1553,8 +1553,13 @@ npm outdated
 
 <img src="./img/section03-lecture026-001.png">
 
-# 📚 Lecture 27: Front-End vs. Back-End Web Development
+# 📚 Lecture 027: Front-End vs. Back-End Web Development
 
 <img src="./img/section03-lecture027-001.png">
 
+# 📚 Lecture 028. Static vs Dynamic vs API
+
+<img src="./img/section03-lecture028-001.png">
+<img src="./img/section03-lecture028-002.png">
+<img src="./img/section03-lecture028-003.png">
 
