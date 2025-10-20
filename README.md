@@ -1552,3 +1552,9 @@ npm outdated
 # 📚 Lecture 026: HTTP in Action
 
 <img src="./img/section03-lecture026-001.png">
+
+# 📚 Lecture 27: Front-End vs. Back-End Web Development
+
+<img src="./img/section03-lecture027-001.png">
+
+
