@@ -1536,3 +1536,16 @@ In order to know which package is outdated:
 ```bash
 npm outdated
 ```
+
+| Prefix | Example | Meaning | Allowed version range | Installable version examples |
+|---------|---------|-------------|-------------------------------|----------------------------------|
+| * | *1.7.5 | Any version matching the prefix. | >=1.7.5 (no upper limit) | 1.7.5, 1.7.6, 1.8.0, 2.0.0, etc. (any 1.x.x or higher) |
+| ^ | ^1.7.5 | Compatible updates (caret). Allows _minor_ and _patch_ changes, but not _major_. | >=1.7.5 <2.0.0 | 1.7.5, 1.7.6, 1.8.0, 1.9.9 (but no 2.0.0) |
+| ~ | ~1.7.5 | Patch-only updates (tilde). Only allows _patch_ changes. | >=1.7.5 <1.8.0 | 1.7.5, 1.7.6, 1.7.7 (but no 1.8.0) |
+
+
+# 📚 Lecture 025: An Overview of How the Web Works
+
+<img src="./img/section03-lecture025-001.png">
+<img src="./img/section03-lecture025-002.png">
+
