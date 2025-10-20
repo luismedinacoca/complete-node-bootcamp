@@ -1557,9 +1557,15 @@ npm outdated
 
 <img src="./img/section03-lecture027-001.png">
 
-# 📚 Lecture 028. Static vs Dynamic vs API
+# 📚 Lecture 028: Static vs Dynamic vs API
 
 <img src="./img/section03-lecture028-001.png">
 <img src="./img/section03-lecture028-002.png">
 <img src="./img/section03-lecture028-003.png">
 
+
+# ✅ Section 04: How Node.js works: A look behind the scenes
+
+
+# 📚 Lecture 030: Node, V8, Libuv and C++
+<img src="./img/section04-lecture030-001.png">
