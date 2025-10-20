@@ -1549,3 +1549,6 @@ npm outdated
 <img src="./img/section03-lecture025-001.png">
 <img src="./img/section03-lecture025-002.png">
 
+# 📚 Lecture 026: HTTP in Action
+
+<img src="./img/section03-lecture026-001.png">
